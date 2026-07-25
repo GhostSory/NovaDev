@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!-- Portfolio web de Diarrassouba Nayerehoua -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayerehoua — Développeur Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">NOVA<span>DEV</span></a>
+
+            <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+                <i class="ri-menu-line nav-toggle-icon"></i>
+                <i class="ri-close-line nav-toggle-icon nav-toggle-icon--close"></i>
+            </button>
+
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home" class="active nav-item">Accueil</a></li>
+                    <li><a href="#competences" class="nav-item">Compétences</a></li>
+                    <li><a href="#about" class="nav-item">À propos</a></li>
+                    <li><a href="#projects" class="nav-item">Projets</a></li>
+                </ul>
+                <a href="#contact" class="header-contact-btn">Contactez-moi</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Section Accueil -->
+        <section class="home section" id="home">
+            <div class="container home-inner">
+                <div class="home-content">
+                    <span class="section-tag section-tag--light">Développeur Web</span>
+                    <h1 class="home-title">
+                        Bonjour, je suis<br>
+                        <span class="home-name">D. Nayerehoua</span>
+                    </h1>
+                    <p class="home-description">
+                        Passionné par la création d'expériences numériques innovantes,
+                        élégantes et performantes.
+                    </p>
+                    <div class="home-btn">
+                        <a href="#projects" class="btn btn--primary">Voir mes projets</a>
+                        <a href="#" class="btn btn--outline">Télécharger mon CV</a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <div class="home-image-frame">
+                        <img src="images/img_profile-2.png" alt="Photo de Diarrassouba Nayerehoua">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section class="competences section section--alt" id="competences">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Compétences</span>
+                    <h2 class="section-title">Technologies que je maîtrise</h2>
+                </div>
+                <ul class="competences-list">
+                    <li class="competences-item">HTML</li>
+                    <li class="competences-item">CSS</li>
+                    <li class="competences-item">JavaScript</li>
+                    <li class="competences-item">Node.js</li>
+                    <li class="competences-item">React</li>
+                    <li class="competences-item">Git</li>
+                    <li class="competences-item">GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">À propos</span>
+                    <h2 class="section-title">Qui suis-je ?</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-cards">
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <img src="images/web_developement.svg" alt="">
+                            </div>
+                            <h3>Développement web</h3>
+                            <p>Sites et applications modernes, rapides et accessibles.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <img src="images/design.svg" alt="">
+                            </div>
+                            <h3>Design graphique</h3>
+                            <p>Interfaces soignées avec une attention aux détails visuels.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <img src="images/machine-learning.svg" alt="">
+                            </div>
+                            <h3>Intelligence artificielle</h3>
+                            <p>Exploration des outils IA pour des solutions innovantes.</p>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p class="about-description">
+                            Je suis un développeur web avec une passion pour la création
+                            d'expériences numériques innovantes et fonctionnelles. J'aime
+                            relever des défis techniques et trouver des solutions créatives
+                            aux problèmes de développement.
+                        </p>
+                        <a href="#contact" class="btn btn--primary">Travaillons ensemble</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section class="projects section section--alt" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Mes projets</h2>
+                </div>
+
+                <div class="projects-list">
+
+                    <article class="project-card">
+                        <div class="project-card__content">
+                            <span class="project-number">01</span>
+                            <h3 class="project-title">E-commerce</h3>
+                            <ul class="project-tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <p class="project-description">
+                                Plateforme e-commerce complète avec catalogue produits,
+                                panier et interface utilisateur intuitive.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn--primary btn--sm">Voir le projet</a>
+                                <a href="#" class="project-link">GitHub <i class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__image">
+                            <img src="images/scr.jpg" alt="Capture du projet E-commerce">
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card--reverse">
+                        <div class="project-card__content">
+                            <span class="project-number">02</span>
+                            <h3 class="project-title">Application Web</h3>
+                            <ul class="project-tags">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>API REST</li>
+                            </ul>
+                            <p class="project-description">
+                                Application full-stack avec authentification, gestion
+                                de données et interface réactive.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn--primary btn--sm">Voir le projet</a>
+                                <a href="#" class="project-link">GitHub <i class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__image">
+                            <img src="images/scr.jpg" alt="Capture du projet Application Web">
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__content">
+                            <span class="project-number">03</span>
+                            <h3 class="project-title">Dashboard</h3>
+                            <ul class="project-tags">
+                                <li>JavaScript</li>
+                                <li>CSS</li>
+                                <li>Charts</li>
+                            </ul>
+                            <p class="project-description">
+                                Tableau de bord interactif pour visualiser des données
+                                en temps réel avec une UX soignée.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn--primary btn--sm">Voir le projet</a>
+                                <a href="#" class="project-link">GitHub <i class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__image">
+                            <img src="images/scr.jpg" alt="Capture du projet Dashboard">
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card--reverse">
+                        <div class="project-card__content">
+                            <span class="project-number">04</span>
+                            <h3 class="project-title">Landing Page</h3>
+                            <ul class="project-tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Responsive</li>
+                            </ul>
+                            <p class="project-description">
+                                Page d'atterrissage moderne et responsive, optimisée
+                                pour la conversion et l'expérience mobile.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn--primary btn--sm">Voir le projet</a>
+                                <a href="#" class="project-link">GitHub <i class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__image">
+                            <img src="images/scr.jpg" alt="Capture du projet Landing Page">
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Contactez-moi</h2>
+                    <p class="section-subtitle">Une idée de projet ? Écrivez-moi, je vous réponds rapidement.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Restons en contact</h3>
+                        <p class="contact-message">
+                            Si vous avez des questions ou si vous souhaitez collaborer,
+                            n'hésitez pas à me contacter. Je serais ravi d'échanger avec vous.
+                        </p>
+                        <ul class="contact-details">
+                            <li class="contact-detail">
+                                <span class="contact-detail-icon"><i class="ri-mail-line"></i></span>
+                                <div>
+                                    <span class="contact-detail-label">Email</span>
+                                    <span class="contact-detail-value">nayerehoua@email.com</span>
+                                </div>
+                            </li>
+                            <li class="contact-detail">
+                                <span class="contact-detail-icon"><i class="ri-map-pin-line"></i></span>
+                                <div>
+                                    <span class="contact-detail-label">Localisation</span>
+                                    <span class="contact-detail-value">Abidjan, Côte d'Ivoire</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="contact-social">
+                            <a href="#" class="contact-social-link" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+                            <a href="#" class="contact-social-link" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+                            <a href="#" class="contact-social-link" aria-label="Email"><i class="ri-mail-fill"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-field">
+                            <input type="text" id="name" name="name" placeholder=" " required autocomplete="name">
+                            <label for="name">Nom complet</label>
+                            <i class="ri-user-line form-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" id="email" name="email" placeholder=" " required autocomplete="email">
+                            <label for="email">Adresse email</label>
+                            <i class="ri-mail-line form-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <label for="subject">Objet</label>
+                            <i class="ri-bookmark-line form-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-field form-field--textarea">
+                            <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+                            <label for="message">Votre message</label>
+                            <i class="ri-chat-3-line form-icon" aria-hidden="true"></i>
+                        </div>
+                        <button class="contact-submit" type="submit">
+                            <span class="contact-submit-text">Envoyer le message</span>
+                            <i class="ri-send-plane-fill" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#home" class="logo logo--footer">NOVA<span>DEV</span></a>
+                <p>Design with love, all rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Accueil</a>
+                <a href="#competences">Compétences</a>
+                <a href="#about">À propos</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Email"><i class="ri-mail-fill"></i></a>
+                <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
