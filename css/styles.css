@@ -1139,8 +1139,13 @@ button {
         padding: 14px;
     }
 
+    .home {
+        padding: 0;
+    }
+
     .home-inner {
-        padding: 40px 24px;
+        padding: 40px 24px 0;
+        gap: 32px;
     }
 
     .home-image-frame img {
