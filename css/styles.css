@@ -1108,7 +1108,9 @@ button {
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-        padding: 24px;
+        padding: 12px 24px 24px;
+        border-bottom: 1px solid var(--border);
+        border-radius: 0 0 var(--radius-md) var(--radius-md);
         box-shadow: var(--shadow-md);
         transform: translateY(-120%);
         opacity: 0;
@@ -1129,13 +1131,23 @@ button {
     }
 
     .nav-item {
-        padding: 14px 0;
+        display: block;
+        padding: 16px 4px;
+        font-size: 17px;
         border-bottom: 1px solid var(--border);
+    }
+
+    .nav-item::after {
+        display: none;
+    }
+
+    .nav-list li:last-child .nav-item {
+        border-bottom: none;
     }
 
     .header-contact-btn {
         text-align: center;
-        margin-top: 16px;
+        margin-top: 12px;
         padding: 14px;
     }
 
