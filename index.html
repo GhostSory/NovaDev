@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaDev</title>
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff">
+    <script>
+        /* Applique le thème avant l'affichage pour éviter le flash */
+        (function () {
+            var theme = "light";
+            try {
+                theme = localStorage.getItem("theme") ||
+                    (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            } catch (e) {}
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -17,11 +30,6 @@
         <div class="container header-inner">
             <a href="#home" class="logo">NOVA<span>DEV</span></a>
 
-            <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
-                <i class="ri-menu-line nav-toggle-icon"></i>
-                <i class="ri-close-line nav-toggle-icon nav-toggle-icon--close"></i>
-            </button>
-
             <nav class="navbar" id="navbar">
                 <ul class="nav-list">
                     <li><a href="#home" class="active nav-item">Accueil</a></li>
@@ -31,6 +39,17 @@
                 </ul>
                 <a href="#contact" class="header-contact-btn">Contactez-moi</a>
             </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Passer en mode sombre" title="Changer de thème">
+                    <i class="ri-moon-line" aria-hidden="true"></i>
+                    <i class="ri-sun-line" aria-hidden="true"></i>
+                </button>
+                <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+                    <i class="ri-menu-line nav-toggle-icon"></i>
+                    <i class="ri-close-line nav-toggle-icon nav-toggle-icon--close"></i>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -153,8 +172,12 @@
                                 <a href="https://github.com/GhostSory/E_commerce_Exclusive.git" class="project-link">GitHub <i class="ri-arrow-right-up-line"></i></a>
                             </div>
                         </div>
-                        <div class="project-card__image">
-                            <img src="images/E-commerce.png" alt="Capture du projet E-commerce">
+                        <div class="project-card__image project-card__image--browser">
+                            <div class="browser-bar" aria-hidden="true">
+                                <span class="browser-dots"><i></i><i></i><i></i></span>
+                                <span class="browser-url">ecommerceexclusive-five.vercel.app</span>
+                            </div>
+                            <img src="images/E-commerce-crop.png" alt="Capture du projet E-commerce : page d'accueil de la boutique Exclusive">
                         </div>
                     </article>
 

@@ -1,6 +1,7 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
+  initTheme();
   initHeader();
   initMobileNav();
   initSmoothScroll();
@@ -9,6 +10,34 @@ document.addEventListener("DOMContentLoaded", () => {
   initContactForm();
   initTypingEffect();
 });
+
+/* Thème clair / sombre */
+function initTheme() {
+  const toggle = document.getElementById("theme-toggle");
+  if (!toggle) return;
+
+  const root = document.documentElement;
+  const meta = document.querySelector('meta[name="theme-color"]');
+
+  const apply = (theme) => {
+    root.setAttribute("data-theme", theme);
+    toggle.setAttribute(
+      "aria-label",
+      theme === "dark" ? "Passer en mode clair" : "Passer en mode sombre",
+    );
+    if (meta) meta.setAttribute("content", theme === "dark" ? "#0b0b14" : "#ffffff");
+  };
+
+  apply(root.getAttribute("data-theme") || "light");
+
+  toggle.addEventListener("click", () => {
+    const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    apply(next);
+    try {
+      localStorage.setItem("theme", next);
+    } catch (e) {}
+  });
+}
 
 /* Header : ombre au scroll */
 function initHeader() {
